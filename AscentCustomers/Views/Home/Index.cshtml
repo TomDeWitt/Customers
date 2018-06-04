@@ -1,0 +1,584 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div style="margin: 5px auto; text-align: center">
+    <p>
+        LRS Client Revision: 1.0.7.8
+    </p>
+</div>
+
+<div class="cb-canvas">
+<div class="cb-highlight">
+        <table class="sr-table" id="Resources">
+            <col style="width: 50%" />
+            <col style="width: 50%" />
+            <thead>
+            <tr>
+                <th>
+                    <div style="margin: 5px auto; text-align: center">
+                    @Html.ActionLink("Calendar", "Calendar")
+                    </div>
+                </th>
+                <th>
+                    <div style="margin: 5px auto; text-align: center">
+                    @Html.ActionLink("Employee Contacts", "Employees")
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            </table>
+        </div>
+        </div>
+
+<div class="cb-canvas" style ="float: left">
+<div class="cb-highlight" style ="float: left">
+        <table class="sr-table" id="LrsProd">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <caption>Land Records Suite <br />(Production)</caption>
+            
+            <thead>
+                <tr>
+                    <th>County</th>
+                    <th>Updated</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://ascent.co.calumet.wi.us/LandRecords" target="_blank">Calumet</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.columbia.wi.us/LandRecords" target="_blank">Columbia</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landrecords.crawfordcountywi.org/LandRecords" target="_blank">Crawford</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landinfo.fdlco.wi.gov/ascent" target="_blank">Fond du Lac</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+            <tr>
+                <td><a href="http://ascent.greencountywi.org/LandRecords" target="_blank">Green</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>             
+            </tr>
+            <tr>
+                <td><a href="https://ascent.co.green-lake.wi.us/LandRecords" target="_blank">Green Lake</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+                <tr>
+                    <td><a href="http://ascent.iowacounty.org/LandRecords" target="_blank">Iowa</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://209.62.163.77/AscentLandRecords" target="_blank">Iron</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+            <tr>
+                <td><a href ="http://ascent.lafayettecountywi.org/AscentLandRecords/" target="_blank">Lafayette</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+            <tr>
+                <td><a href="https://ascent.co.lincoln.wi.us/LandRecords" target="_blank">Lincoln</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+                <tr>
+                    <td><a href="http://taxes.manitowoc.org/LandRecords" target="_blank">Manitowoc</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.outagamie.wi.us/LandRecords" target="_blank">Outagamie</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+            <tr>
+                <td><a href="http://www.ascent.co.ozaukee.wi.us/LandRecords" target="_blank">Ozaukee</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://landinfo.co.portage.wi.us/LandRecords" target="_blank">Portage</a></td>
+                <td>05-22-2018</td>
+                <td>v2.1.6.0</td>
+            </tr>
+                <tr>
+                    <td><a href="http://ascent.racinecounty.com/LandRecords" target="_blank">Racine</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://lrs.co.sauk.wi.us/AscentLandRecords" target="_blank">Sauk</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.shawano.wi.us/LandRecords" target="_blank">Shawano</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://taxinfo.co.walworth.wi.us:9080/AscentLandRecordsSuite" target="_blank">Walworth</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landrecords.co.washington.wi.us/LandRecords" target="_blank">Washington</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://wcws10.co.winnebago.wi.us/LandRecords" target="_blank">Winnebago</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+</div>
+
+
+<div class="cb-canvas" style ="float: left">
+<div class="cb-highlight" style ="float: left">
+        <table class="sr-table" id="LrsStage">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+
+            <caption>Land Records Suite <br /> (Staging)</caption>
+            <thead>
+                <tr>
+                    <th>County</th>
+                    <th>Updated</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://ascent.co.calumet.wi.us/LandRecordsStaging" target="_blank">Calumet</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.columbia.wi.us/LandRecordsStaging" target="_blank">Columbia</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landrecords.crawfordcountywi.org/LandRecordsStaging" target="_blank">Crawford</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landinfo.fdlco.wi.gov/LandRecordsStaging" target="_blank">Fond du Lac</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+            <tr>
+                <td><a href="http://ascent.greencountywi.org/LandRecordsStaging" target="_blank">Green</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+            <tr>
+                <td><a href="https://ascent.co.green-lake.wi.us/LandRecordsStaging" target="_blank">Green Lake</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+                <tr>
+                    <td><a href="http://ascent.iowacounty.org/LandRecordsStaging" target="_blank">Iowa</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://209.62.163.77/AscentLandRecordsStaging" target="_blank">Iron</a></td>
+                    <td>02-21-2017</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+            <tr>
+                <td><a href ="http://ascent.lafayettecountywi.org/AscentLandRecordsStaging/" target="_blank">Lafayette</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+            <tr>
+                <td><a href="https://ascent.co.lincoln.wi.us/LandRecordsStaging" target="_blank">Lincoln</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+                <tr>
+                    <td><a href="http://taxes.manitowoc.org/LandRecordsStaging" target="_blank">Manitowoc</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.outagamie.wi.us/LandRecordsStaging" target="_blank">Outagamie</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+            <tr>
+                <td><a href="http://www.ascent.co.ozaukee.wi.us/LandRecordsStaging" target="_blank">Ozaukee</a></td>
+                <td>11-10-2017</td>
+                <td>v2.1.6.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://landinfo.co.portage.wi.us/LandRecordsStaging" target="_blank">Portage</a></td>
+                <td>05-22-2018</td>
+                <td>v2.1.6.0</td>
+            </tr>
+                <tr>
+                    <td><a href="http://ascent.racinecounty.com/LandRecordsStaging" target="_blank">Racine</a></td>
+                    <td>10-02-2016</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://lrs.co.sauk.wi.us/AscentLandRecordsStaging" target="_blank">Sauk</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.shawano.wi.us/LandRecordsStaging" target="_blank">Shawano</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://taxinfo.co.walworth.wi.us:9080/StagingAscentLandRecords" target="_blank">Walworth</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landrecords.co.washington.wi.us/LandRecordsStaging" target="_blank">Washington</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://wcws10.co.winnebago.wi.us/LandRecordsStaging" target="_blank">Winnebago</a></td>
+                    <td>11-10-2017</td>
+                    <td>v2.1.6.0</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+</div>
+
+<div class="cb-canvas"style ="float: right">
+    <div class="cb-highlight"style ="float: right">
+        <table class="sr-table" id="PmsStage">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <caption>Permit Management Suite (Staging)</caption>
+            <thead>
+            <tr>
+                <th>County</th>
+                <th>Updated</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="https://web.burnettcounty.org/PermitManagementStaging" target="_blank">Burnett</a></td>
+                <td>02-13-2016</td>
+                <td>v2.1.3.0</td>
+            </tr>
+            <tr>
+                <td><a href="https://ascent.co.calumet.wi.us/PermitManagementStaging" target="_blank">Calumet</a></td>
+                <td>07-14-2016</td>
+                <td>v2.1.2.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://ascent.co.columbia.wi.us/PermitManagementStaging" target="_blank">Columbia</a></td>
+                <td>02-18-2015</td>
+                <td>v2.0.2.1</td>
+            </tr>
+            <tr>
+                <td><a href="http://landrecords.crawfordcountywi.org/PermitManagementStaging" target="_blank">Crawford</a></td>
+                <td>02-02-2017</td>
+                <td>v2.1.3.0</td>                
+            </tr>
+            <tr>
+                <td><a href="http://landinfo.fdlco.wi.gov/PermitManagementStaging" target="_blank">Fond du Lac</a></td>
+                <td>02-18-2015</td>
+                <td>v2.0.2.1</td>                
+            </tr>
+            <tr>
+                <td><a href="https://ascent.co.green-lake.wi.us/PermitManagementStaging" target="_blank">Green Lake</a></td>
+                <td>11-07-2016</td>
+                <td>v2.1.3.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://ascent.iowacounty.org/PermitManagementStaging" target="_blank">Iowa</a></td>
+                <td>11-07-2016</td>
+                <td>v2.1.3.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://209.62.163.77/AscentPermitManagementStaging" target="_blank">Iron</a></td>
+                <td>06-19-2017</td>
+                <td>v2.1.5.0</td>
+            </tr>
+            <tr>
+                <td><a href ="http://ascent.lafayettecountywi.org/AscentPermitManagementStaging/" target="_blank">Lafayette</a></td>
+                <td>9-07-2017</td>
+                <td>v2.1.5.0</td>
+            </tr>
+            <tr>
+                <td><a href ="https://ascent.co.lincoln.wi.us/PermitManagementStaging/" target="_blank">Lincoln</a></td>
+                <td>12-27-2017</td>
+                <td>v2.1.5.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://powtsweb.co.portage.wi.us/PermitManagementStaging" target="_blank">Portage</a></td>
+                <td>09-23-2016</td>
+                <td>v2.1.2.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://ascent.racinecounty.com/PermitManagementStaging" target="_blank">Racine</a></td>
+                <td>03-10-2015</td>
+                <td>v2.0.2.1</td>
+            </tr>
+            <tr>
+                <td><a href="http://lrs.co.sauk.wi.us/AscentPermitManagementStaging" target="_blank">Sauk</a></td>
+                <td>10-27-2015</td>
+                <td>v2.0.2.1</td>
+            </tr>
+            <tr>
+                <td><a href="http://ascent.co.shawano.wi.us/PermitManagementStaging" target="_blank">Shawano</a></td>
+                <td>03-13-2015</td>
+                <td>v2.0.2.1</td>
+            </tr>
+            <tr>
+                <td><a href="http://www2.co.sheboygan.wi.us/PermitManagementStaging" target="_blank">Sheboygan</a></td>
+                <td>03-11-2016</td>
+                <td>v2.1.1.0</td>
+            </tr>
+            <tr>
+                <td><a href="https://ascent.sccwi.gov/PermitManagementStaging" target="_blank">St. Croix</a></td>
+                <td>01-25-2016</td>
+                <td>v2.1.0.0</td>
+            </tr>
+            <tr>
+                <td><a href="http://landrecords.co.washington.wi.us/PermitManagementStaging" target="_blank">Washington</a></td>
+                <td>09-29-2015</td>
+                <td>v2.0.2.1</td>
+            </tr>
+            <tr>
+                <td><a href="https://powtsmaintenance-tst.waukeshacounty.gov/PermitManagement" target="_blank">Waukesha</a></td>
+                <td>02-20-2017</td>
+                <td>v2.1.3.0</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div class="cb-canvas"style ="float: right">
+<div class="cb-highlight"style ="float: right">
+        <table class="sr-table" id="PmsProd">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <caption>Permit Management Suite (Production)</caption>
+            <thead>
+                <tr>
+                    <th>County</th>
+                    <th>Updated</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://web.burnettcounty.org/PermitManagement" target="_blank">Burnett</a></td>
+                    <td>02-13-2017</td>
+                    <td>v2.1.3.0</td>
+                </tr>
+                <tr>
+                    <td><a href="https://ascent.co.calumet.wi.us/PermitManagement" target="_blank">Calumet</a></td>
+                    <td>07-14-2016</td>
+                    <td>v2.1.2.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.columbia.wi.us/PermitManagement" target="_blank">Columbia</a></td>
+                    <td>02-18-2015</td>
+                    <td>v2.0.2.1</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landrecords.crawfordcountywi.org/PermitManagement" target="_blank">Crawford</a></td>
+                    <td>02-02-2017</td>
+                    <td>v2.1.3.0</td>                
+                </tr>
+                <tr>
+                    <td><a href="http://landinfo.fdlco.wi.gov/PermitManagement" target="_blank">Fond du Lac</a></td>
+                    <td>02-18-2015</td>
+                    <td>v2.0.2.1</td>
+                </tr>
+                <tr>
+                    <td><a href="https://ascent.co.green-lake.wi.us/PermitManagement" target="_blank">Green Lake</a></td>
+                    <td>11-07-2016</td>
+                    <td>v2.1.3.0</td>                
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.iowacounty.org/PermitManagement" target="_blank">Iowa</a></td>
+                    <td>02-18-2015</td>
+                    <td>v2.0.2.1</td>
+                </tr>
+            <tr>
+                <td><a href="http://209.62.163.77/AscentPermitManagement" target="_blank">Iron</a></td>
+                <td>01-04-2016</td>
+                <td>v2.0.2.1</td>
+            </tr>
+            <tr>
+                <td><a href ="http://ascent.lafayettecountywi.org/AscentPermitManagement/" target="_blank">Lafayette</a></td>
+                <td>9-07-2017</td>
+                <td>v2.1.5.0</td>
+            </tr>
+            <tr>
+                <td><a href ="https://ascent.co.lincoln.wi.us/PermitManagement" target="_blank">Lincoln</a></td>
+                <td>12-27-2017</td>
+                <td>v2.1.5.0</td>
+            </tr>
+                <tr>    
+                    <td><a href="http://powtsweb.co.portage.wi.us/PermitManagement" target="_blank">Portage</a></td>
+                    <td>09-23-2016</td>
+                    <td>v2.1.2.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.racinecounty.com/PermitManagement" target="_blank">Racine</a></td>
+                    <td>03-10-2015</td>
+                    <td>v2.0.2.1</td>
+                </tr>
+                <tr>
+                    <td><a href="http://lrs.co.sauk.wi.us/AscentPermitManagement" target="_blank">Sauk</a></td>
+                    <td>10-27-2015</td>
+                    <td>v2.0.2.1</td>
+                </tr>
+                <tr>
+                    <td><a href="http://ascent.co.shawano.wi.us/PermitManagement" target="_blank">Shawano</a></td>
+                    <td>06-15-2016</td>
+                    <td>v0.0.0.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://www2.co.sheboygan.wi.us/PermitManagement" target="_blank">Sheboygan</a></td>
+                    <td>03-11-2016</td>
+                    <td>v2.1.1.0</td>
+                </tr>
+                <tr>
+                    <td><a href="https://ascent.sccwi.gov/PermitManagement" target="_blank">St. Croix</a></td>
+                    <td>01-25-2016</td>
+                    <td>v2.1.0.0</td>
+                </tr>
+                <tr>
+                    <td><a href="http://landrecords.co.washington.wi.us/PermitManagement" target="_blank">Washington</a></td>
+                    <td>09-29-2015</td>
+                    <td>v2.0.2.1</td>
+                </tr>
+                <tr>
+                    <td><a href="https://ascent.waukeshacounty.gov/PermitManagement" target="_blank">Waukesha</a></td>
+                    <td>03-11-2014</td>
+                    <td>v2.1.1.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+</div>
+</div>
+<div class="cb-canvas" style="width: 25%; float: left;">
+    <div class="cb-highlight">
+        <table class="sr-table" id="GrsProduction">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <caption>General Receipting Suite (Production)</caption>
+            <thead>
+            <tr>
+                <th>County</th>
+                <th>Updated</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="http://landrecords.crawfordcountywi.org/GeneralReceipting" target="_blank">Crawford</a></td>
+                <td>02-02-2017</td>
+                <td>v2.1.3.0</td>                
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="cb-canvas" style="width: 25%; float: left;">
+    <div class="cb-highlight">
+        <table class="sr-table" id="GrsStaging">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <caption>General Receipting Suite <br /> (Staging)</caption>
+            <thead>
+            <tr>
+                <th>County</th>
+                <th>Updated</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="http://landrecords.crawfordcountywi.org/GeneralReceiptingStaging" target="_blank">Crawford</a></td>
+                <td>02-02-2017</td>
+                <td>v2.1.3.0</td>                
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="cb-canvas" style="width: 49%; float: left;">
+    <div class="cb-highlight">
+        <table class="sr-table" id="LrsInternal">
+            <col style="width: 25%" />
+            <col style="width: 25%" />
+            <col style="width: 25%"/>
+            <col style="width: 25%"/>
+
+            <caption>Transcendent Technologies</caption>
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Documents</th>
+                <th>Demo</th>
+                <th>Database</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Land Records Suite</td>
+                <td><a href="http://209.62.163.77/ascent_privhelp/Ascent%20Land%20Records%20Suite%20Public%20Portal.html" target="_blank">Online Help</a></td>
+                <td><a href="http://74.218.129.182:9080/AscentDemo" target="_blank">Go There</a></td>
+                <td>LrsDemo201402</td>
+            </tr>
+            <tr>
+                <td>Training Suite</td>
+                <td><a href="#"></a></td>
+                <td><a href="http://74.218.129.182:9080/AscentTraining" target="_blank">Go There</a></td>
+                <td>TrainingFdlLrs</td>
+            </tr>
+            <tr>
+                <td>Testing Suite</td>
+                <td><a href="#"></a></td>
+                <td><a href="http://74.218.129.182:9080/AscentStaging" target="_blank">Go There</a></td>
+                <td>Columbia Lrs</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

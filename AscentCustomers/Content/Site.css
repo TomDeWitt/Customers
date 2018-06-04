@@ -1,0 +1,174 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+#main
+{
+	width: 1075px;
+	margin: 0 auto;
+	padding: 10px 0 10px;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+a {
+	text-decoration: none;
+	color: #d31e25;
+}
+
+.cb-canvas
+{
+	overflow: hidden;
+	background: white;
+	border: 1px solid #e3e9ef;
+	border-radius: 12px 12px 16px 16px;
+	-moz-border-radius: 12px 12px 16px 16px;
+	-webkit-border-radius: 12px 12px 16px 16px;
+	border-width: 0 1px 1px;
+	margin-bottom: 15px;
+}
+
+.cb-highlight
+{
+	border-top: 6px solid #c10616;
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+}
+
+.sr-table
+{
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 8px;
+}
+/*
+.sr-table th,
+.sr-table td {
+	width: 20%;
+}
+*/
+.sr-table th
+{
+	font: 0.93em Verdana, Arial, Helvetica, sans-serif;
+	color: #282626;
+	border-bottom: 1px solid #d7d7d7;
+	text-align: left;
+	font-weight: bold;
+	padding: 3px 8px;
+}
+.sr-table td {
+	padding: 2px 8px;
+}
+
+.sr-td-right {
+	text-align: right;
+}
+
+.sr-table tr.total 
+{
+    border-top: 2px solid #383838;		
+}
+
+.sr-table caption
+{
+	color: #c10610;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #d7d7d7;
+}
+
+
+.sr-table tbody tr:nth-child(odd) {
+	background-color: #d7d7d7;
+}
+
+.sr-table tfoot tr,
+.sr-table tbody tr:nth-child(even) {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #d7d7d7;	
+}
+/*Requires TTechHelpers.js script for 'alternate' class. nth-child(odd) pseudo is not supported in IE8*/
+.sr-table tbody .alternate {
+	background-color: #d7d7d7;
+}
+
+.sr-submit {
+	padding-right: 15px;
+}
+
+.sr-submit input {
+	margin-bottom: 10px;
+}
+
+.sr-parcel {
+	width: 220px;
+	text-align: left;
+	padding-left: 8px;
+}
+
+.mark-inactive {
+	text-decoration: line-through;
+}
+
+.cm-centered { margin: 5px auto; }

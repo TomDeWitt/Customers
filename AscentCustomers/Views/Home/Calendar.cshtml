@@ -1,0 +1,139 @@
+﻿@using DayPilot.Web.Mvc
+@using DayPilot.Web.Mvc.Enums.Calendar
+@using DayPilot.Web.Mvc.Events.Calendar;
+@{
+    ViewBag.Title = "Transcendent Calendar";
+}
+
+<style>
+    #toolbar {
+        margin-bottom: 10px;
+    }
+
+        #toolbar a {
+            display: inline-block;
+            height: 20px;
+            text-decoration: none;
+            padding: 5px;
+            color: #666;
+            border: 1px solid #aaa;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e2e2e2));
+            background: -webkit-linear-gradient(top, #fafafa 0%, #e2e2e2);
+            background: -moz-linear-gradient(top, #fafafa 0%, #e2e2e2);
+            background: -ms-linear-gradient(top, #fafafa 0%, #e2e2e2);
+            background: -o-linear-gradient(top, #fafafa 0%, #e2e2e2);
+            background: linear-gradient(top, #fafafa 0%, #e2e2e2);
+            filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#fafafa", endColorStr="#e2e2e2");
+        }
+</style>
+
+<div style="float: left; width: 150px">
+    @Html.DayPilotNavigator("monthSwitcher", new DayPilotNavigatorConfig
+{
+    CssOnly = true,
+    CssClassPrefix = "navigator_white",
+    ShowMonths = 3,
+    SkipMonths = 3
+})
+</div>
+
+<div id="tabs" style="margin-left: 150px">
+    <div id="toolbar">
+        <a href="#" id="dayViewSelect">Day</a>
+        <a href="#" id="weekViewSelect">Week</a>
+        <a href="#" id="monthViewSelect">Month</a>
+        @Html.ActionLink("Customers", "Index")
+    </div>
+
+    @Html.DayPilotCalendar("dayView", new DayPilotCalendarConfig
+{
+    BackendUrl = Url.Content("../Calendar/Day"),
+    EventMoveHandling = EventMoveHandlingType.CallBack,
+    EventResizeHandling = EventResizeHandlingType.CallBack,
+    CssOnly = true,
+    CssClassPrefix = "calendar_white",
+    HeightSpec  = HeightSpec.Fixed,
+    Height = 660,
+    ViewType = DayPilot.Web.Mvc.Enums.Calendar.ViewType.Day,
+
+    EventClickHandling = EventClickHandlingType.JavaScript,
+    EventClickJavaScript = "edit(e.id())",
+    TimeRangeSelectedHandling = TimeRangeSelectedHandlingType.JavaScript,
+    TimeRangeSelectedJavaScript = "create(start, end)"
+})
+
+    @Html.DayPilotCalendar("weekView", new DayPilotCalendarConfig
+{
+    BackendUrl = Url.Content("../Calendar/Week"),
+    EventMoveHandling = EventMoveHandlingType.CallBack,
+    EventResizeHandling = EventResizeHandlingType.CallBack,
+    CssOnly = true,
+    CssClassPrefix = "calendar_white",
+    HeightSpec = HeightSpec.Fixed,
+    Height = 660,
+    ViewType = DayPilot.Web.Mvc.Enums.Calendar.ViewType.Week,
+
+    EventClickHandling = EventClickHandlingType.JavaScript,
+    EventClickJavaScript = "edit(e.id())",
+    TimeRangeSelectedHandling = TimeRangeSelectedHandlingType.JavaScript,
+    TimeRangeSelectedJavaScript = "create(start, end)"
+})
+
+    @Html.DayPilotMonth("monthView", new DayPilotMonthConfig
+{
+    BackendUrl = Url.Content("../Calendar/Month"),
+    EventMoveHandling = DayPilot.Web.Mvc.Events.Month.EventMoveHandlingType.CallBack,
+    EventResizeHandling = DayPilot.Web.Mvc.Events.Month.EventResizeHandlingType.CallBack,
+    CssOnly = true,
+    CssClassPrefix = "month_white",
+    EventHeight = 25,
+
+    EventClickHandling = DayPilot.Web.Mvc.Events.Month.EventClickHandlingType.JavaScript,
+    EventClickJavaScript = "edit(e.id())",
+    TimeRangeSelectedHandling = DayPilot.Web.Mvc.Events.Month.TimeRangeSelectedHandlingType.JavaScript,
+    TimeRangeSelectedJavaScript = "create(start, end)"
+})
+</div>
+
+<script type="text/javascript">
+
+    function edit(id) {
+        var modal = new DayPilot.Modal();
+        modal.closed = function () {
+            if (this.result == "OK") {
+                switcher.active.control.commandCallBack('refresh');
+            }
+        };
+        modal.showUrl("/CalendarEvent/Edit/" + id);
+        //modal.showUrl("/AscentCustomers/CalendarEvent/Edit/" + id);
+    }
+
+    function create(start, end) {
+        var modal = new DayPilot.Modal();
+        modal.closed = function () {
+            if (this.result == "OK") {
+                switcher.active.control.commandCallBack('refresh');
+            }
+            switcher.active.control.clearSelection();
+        };
+        //TODO Figure out the correct way to get this path
+        modal.showUrl("/CalendarEvent/Create?start=" + start + "&end=" + end);
+        //modal.showUrl("/AscentCustomers/CalendarEvent/Create?start=" + start + "&end=" + end);
+    }
+
+
+    var switcher = new DayPilot.Switcher();
+
+    switcher.addView(dayView);
+    switcher.addView(weekView);
+    switcher.addView(monthView);
+
+    switcher.addButton("dayViewSelect", dayView);
+    switcher.addButton("weekViewSelect", weekView);
+    switcher.addButton("monthViewSelect", monthView);
+
+    switcher.addNavigator(monthSwitcher);
+
+    switcher.show(weekView);
+
+</script>
